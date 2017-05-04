@@ -34,10 +34,10 @@ public class TestKea {
 		//    documents should be in txt format with an extention "txt"
 		//    keyphrases with the same name as documents, but extension "key"
 		//    one keyphrase per line!
-		km.setDirName("testdocs/en/train");
+		km.setDirName("/Users/Computer/Projects/KEA/testdocs/en/train");
 		
 		// 2. Name of the model -- give the path to where the model is to be stored and its name
-		km.setModelName("testdocs/en/model");
+		km.setModelName("/Users/Computer/Projects/KEA/testdocs/en/model");
 		 
 		// 3. Name of the vocabulary -- name of the file (without extension) that is stored in VOCABULARIES
 		//    or "none" if no Vocabulary is used (free keyphrase extraction).
@@ -91,7 +91,7 @@ public class TestKea {
 		
 		// 2. Name of the model -- give the path to the model
 		//    needs to be on classpath (i.e. include '.' in classpath for this to work)
-		ke.setModelName("/testdocs/en/model");
+		ke.setModelName("/Users/Computer/Projects/KEA/testdocs/en/model");
 		 
 		// 3. Name of the vocabulary -- name of the file (without extension) that is stored in VOCABULARIES
 		//    or "none" if no Vocabulary is used (free keyphrase extraction).
@@ -166,7 +166,7 @@ public class TestKea {
 		// to extract keyphrases from new documents,
 		System.err.println("Extracting keyphrases from test documents... ");
 		
-		String m_testdir = "testdocs/en/test";
+		String m_testdir = "/Users/Computer/Projects/KEA/testdocs/en/test";
 		// String m_testdir = "/Users/alyona/Documents/corpora/term_assignment/FAO_30/test1";
 		
 		test.setOptionsTesting(m_testdir);

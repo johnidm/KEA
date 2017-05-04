@@ -982,7 +982,7 @@ public class KEAKeyphraseExtractor implements OptionHandler {
 	public void loadModel() throws Exception {
 		
 		BufferedInputStream inStream =
-			new BufferedInputStream(this.getClass().getResourceAsStream(m_modelName));
+			new BufferedInputStream(new FileInputStream(m_modelName));
 		ObjectInputStream in = new ObjectInputStream(inStream);
 		m_KEAFilter = (KEAFilter)in.readObject();
 		

@@ -755,7 +755,7 @@ public class KEAModelBuilder implements OptionHandler {
 		Enumeration elem = stems.keys();
 		while (elem.hasMoreElements()) {
 			String str = (String)elem.nextElement();
-			
+			System.err.println("     doc " + str);
 			double[] newInst = new double[2];
 			try {
 				File txt = new File(m_dirName + "/" + str + ".txt");

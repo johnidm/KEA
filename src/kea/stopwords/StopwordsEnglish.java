@@ -1,5 +1,9 @@
 package kea.stopwords;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
 
 /**
  * Class that can test whether a given string is a stop word.
@@ -9,8 +13,11 @@ package kea.stopwords;
  */
 public class StopwordsEnglish extends Stopwords {
 
-	public StopwordsEnglish(){
-		loadStopwords(this.getClass().getResourceAsStream("/com/iai/uima/kea/data/stopwords/stopwords_" + "en" + ".txt"));
+	public StopwordsEnglish() throws FileNotFoundException{
+            
+            InputStream is = new FileInputStream("/Users/Computer/Projects/KEA/data/stopwords/stopwords_en.txt");
+            loadStopwords(is);
+                        
 	}
 }
 
